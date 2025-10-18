@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Our Team - ISTE PESCE</title>
-    <link rel="icon" href="" type="imagec:\Users\Nagashree\Desktop\xyz\iste logo.jpeg/jpeg" />
+    <link rel="icon" href="images/iste logo.jpeg" type="image/jpeg" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,8 +25,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   background: linear-gradient(
     135deg,
     #0f172a 10%,
@@ -97,8 +97,8 @@ body {
       }
 
       .nav-links a:hover {
-        color: #6366f1;
-        background: rgba(99, 102, 241, 0.1);
+        color: #ff8a00;
+        background: rgba(255, 138, 0, 0.1);
       }
 
       .dropdown {
@@ -136,8 +136,8 @@ body {
       }
 
       .dropdown-menu a:hover {
-        background: rgba(99, 102, 241, 0.1);
-        color: #6366f1;
+        background: rgba(255, 138, 0, 0.1);
+        color: #ff8a00;
       }
 
       /* Hero Section */
@@ -170,8 +170,8 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -204,10 +204,10 @@ body {
 }
 .tab-btn.active,
 .tab-btn:hover {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 25px rgba(229, 46, 113, 0.3);
 }
 .main-content {
   padding: 4rem 2rem;
@@ -243,7 +243,7 @@ body {
 .team-member:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border-color: rgba(99, 102, 241, 0.3);
+  border-color: rgba(229, 46, 113, 0.3);
 }
 .member-image {
   width: 110px;
@@ -252,7 +252,7 @@ body {
   margin: 0 auto 1.5rem;
   position: relative;
   overflow: hidden;
-  border: 4px solid #3e41f04d;
+  border: 4px solid rgba(229, 46, 113, 0.2);
   transition: all 0.3s ease;
 }
 .member-image img {
@@ -261,7 +261,7 @@ body {
   object-fit: cover;
 }
 .team-member:hover .member-image {
-  border-color:#6366f1;
+  border-color: #e52e71;
   transform: scale(1.05);
 }
 .member-name {
@@ -289,39 +289,15 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
 }
-.expertise-tag {
-  background: rgba(246, 246, 252, 0.945);
-  color: #171aec;
+.expertise-tag, .expertise-tag1, .expertise-tag2 {
+  background: rgba(6, 182, 212, 0.1);
+  color: #22d3ee;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(249, 249, 253, 0.91);
-}
-.expertise-tag1 {
-  background: rgba(246, 246, 252, 0.945);
-  color: #7c0fe2;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid rgba(249, 249, 253, 0.91);
-}
-.expertise-tag2 {
-  background: rgba(246, 246, 252, 0.945);
-  color: #7c0fe2;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid rgba(249, 249, 253, 0.91);
-}
-/* Specific styling for Information Science and Technical Workshops tags */
-.expertise-tag.information-science,
-.expertise-tag.technical-workshops {
-  background: #ffffff;
-  color: #171aec;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  transition: all 0.3s ease;
 }
 /* Classes for centering last row items */
 .center-single {
@@ -337,25 +313,29 @@ body {
 }
 /* Core Member Styling */
 .core-member {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  border-color: #4f46e5;
-  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+  border-color: #e52e71;
+  box-shadow: 0 10px 40px rgba(229, 46, 113, 0.4);
   color: #fff;
 }
 .core-member .member-name,
 .core-member .member-role,
-.core-member .member-description,
-.core-member .expertise-tag {
+.core-member .member-description {
   color: #e0e7ff;
+}
+.core-member .expertise-tag, .core-member .expertise-tag1, .core-member .expertise-tag2 {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 /* Section subtitle style */
 .section-subtitle {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
-  color: #a78bfa;
+  color: #ff8a00;
   text-align: center;
   margin: 2rem auto 1.5rem auto;
-  border-bottom: 2px solid #a78bfa;
+  border-bottom: 2px solid #ff8a00;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -384,7 +364,7 @@ body {
     text-decoration: none;
   }
   .member-contact .contact-link:hover {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(135deg, #e52e71, #ff8a00);
     color: pink;
     transform: translateY(-2px) scale(1.1);
   }
@@ -407,7 +387,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   font-weight: 700;
-  color: #171aec;
+  color: #22d3ee;
   margin-bottom: 0.5rem;
 }
 .stat-label {
@@ -435,7 +415,7 @@ footer {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -445,7 +425,7 @@ footer {
 }
 .social-link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 25px rgba(229, 46, 113, 0.3);
 }
 .social-link img {
   width: 35px;
@@ -542,8 +522,8 @@ footer {
           Oversees ISTE initiatives and guides the chapter's vision.
         </p>
         <div class="member-expertise">
-          <span class="expertise-tag1">Leadership</span>
-          <span class="expertise-tag1">Mentorship</span>
+          <span class="expertise-tag">Leadership</span>
+          <span class="expertise-tag">Mentorship</span>
         </div>
       </div>
       <div class="team-member core-member">
@@ -556,8 +536,8 @@ footer {
           Coordinates faculty activities and documentation.
         </p>
         <div class="member-expertise">
-          <span class="expertise-tag1">Coordination</span>
-          <span class="expertise-tag1">Administration</span>
+          <span class="expertise-tag">Coordination</span>
+          <span class="expertise-tag">Administration</span>
         </div>
       </div>
     </div>
@@ -619,8 +599,8 @@ footer {
           Supports students in information science and technical workshops.
         </p>
         <div class="member-expertise">
-          <span class="expertise-tag information-science">Information Science</span>
-          <span class="expertise-tag technical-workshops">Technical Workshops</span>
+          <span class="expertise-tag">Information Science</span>
+          <span class="expertise-tag">Technical Workshops</span>
         </div>
       </div>
 
@@ -823,9 +803,9 @@ footer {
               innovative approaches.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Leadership</span>
-              <span class="expertise-tag2">Event Management</span>
-              <span class="expertise-tag2">Technical Skills</span>
+              <span class="expertise-tag">Leadership</span>
+              <span class="expertise-tag">Event Management</span>
+              <span class="expertise-tag">Technical Skills</span>
             </div>
             <div class="member-contact">
               <a
@@ -858,9 +838,9 @@ footer {
               among students.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Innovation</span>
-              <span class="expertise-tag2">Event Organizing</span>
-              <span class="expertise-tag2">Community Building</span>
+              <span class="expertise-tag">Innovation</span>
+              <span class="expertise-tag">Event Organizing</span>
+              <span class="expertise-tag">Community Building</span>
             </div>
             <div class="member-contact">
               <a
@@ -892,8 +872,8 @@ footer {
               Leading code reviews and developer mentorship.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Mentoring</span>
-              <span class="expertise-tag2">Code Review</span>
+              <span class="expertise-tag">Mentoring</span>
+              <span class="expertise-tag">Code Review</span>
             </div>
             <div class="member-contact">
               <a href="#" class="contact-link" aria-label="Instagram">
@@ -915,8 +895,8 @@ footer {
               Coordinating student projects and internships.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Project Management</span>
-              <span class="expertise-tag2">Internships</span>
+              <span class="expertise-tag">Project Management</span>
+              <span class="expertise-tag">Internships</span>
             </div>
             <div class="member-contact">
               <a href="#" class="contact-link" aria-label="Instagram">
@@ -938,8 +918,8 @@ footer {
               Creating educational content and social media strategies.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Content Creation</span>
-              <span class="expertise-tag2">Social Media</span>
+              <span class="expertise-tag">Content Creation</span>
+              <span class="expertise-tag">Social Media</span>
             </div>
             <div class="member-contact">
               <a href="#" class="contact-link" aria-label="Instagram">
@@ -961,8 +941,8 @@ footer {
               Managing finances and budgeting for club activities.
             </p>
             <div class="member-expertise">
-              <span class="expertise-tag2">Budgeting</span>
-              <span class="expertise-tag2">Management</span>
+              <span class="expertise-tag">Budgeting</span>
+              <span class="expertise-tag">Management</span>
             </div>
             <div class="member-contact">
               <a href="#" class="contact-link" aria-label="Instagram">
