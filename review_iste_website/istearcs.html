@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ISTE ARCS</title>
     <link rel="icon" href="images/iste logo 2.jpg" type="image/jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navbar.css" />
     <style>
       * {
         margin: 0;
@@ -63,7 +67,7 @@
         box-shadow: 0 6px 25px rgba(99, 102, 241, 0.4);
       }
       .site-title {
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         font-size: 1.5rem;
         font-weight: 600;
         color: #ffffff;
@@ -228,13 +232,13 @@
         opacity: 0;
         animation: fadeIn 0.8s ease-out forwards;
       }
-      
+
       @keyframes fadeIn {
         to {
           opacity: 1;
         }
       }
-      
+
       .modal-content {
         background: rgba(23, 23, 23, 0.95);
         border: 1px solid rgba(196, 190, 180, 0.2);
@@ -254,13 +258,13 @@
         width: 90%;
         position: relative;
       }
-      
+
       @keyframes slideUp {
         to {
           transform: translateY(0);
         }
       }
-      
+
       .modal-content h1 {
         font-family: "Montserrat", Arial, sans-serif;
         font-size: 2.8rem;
@@ -270,7 +274,7 @@
         margin-bottom: 20px;
         text-transform: uppercase;
       }
-      
+
       .modal-content p {
         font-family: "Roboto", Arial, sans-serif;
         font-size: 1.1rem;
@@ -280,7 +284,7 @@
         margin: 0;
         max-width: 400px;
       }
-      
+
       .modal-close {
         position: absolute;
         top: 20px;
@@ -299,7 +303,7 @@
         align-items: center;
         justify-content: center;
       }
-      
+
       .modal-close:hover {
         background: rgba(196, 190, 180, 0.1);
         color: #fff;
@@ -356,51 +360,8 @@
   <body>
     <div id="vanta-bg"></div>
     <header role="banner">
-      <nav class="navbar" role="navigation" aria-label="Primary Navigation">
-        <a href="index.html" class="brand">
-        <img
-          src="Iste logo perfect background removed.png"
-          alt="ISTE Logo"
-          class="logo-img"
-        />
-        <span class="site-title">ISTE</span>
-      </a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="event.html">Events</a></li>
-          <li class="dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-              tabindex="0"
-              >Student Chapters</a
-            >
-            <ul class="dropdown-menu" aria-label="submenu">
-              <li><a href="istewings.html">ISTE WINGS</a></li>
-              <li><a href="istearcs.html">ISTE ARCS</a></li>
-            </ul>
-          </li>
-          <li><a href="our_team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="aboutus.html">About</a></li>
-        </ul>
-        <div
-          class="menu-icon"
-          id="menu-icon"
-          role="button"
-          aria-label="Toggle navigation menu"
-          aria-pressed="false"
-          aria-controls="nav-links"
-          tabindex="0"
-        >
-          <span id="hide_1"></span>
-          <span id="rotate_1"></span>
-          <span id="rotate_2"></span>
-          <span id="hide_2"></span>
-        </div>
-      </nav>
+      <!-- Navigation -->
+      <div id="navbar-placeholder"></div>
     </header>
     <main style="flex-grow: 1"></main>
     <div
@@ -412,7 +373,9 @@
       aria-label="Coming Soon"
     >
       <div class="modal-content">
-        <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+          ×
+        </button>
         <h1>Coming Soon</h1>
         <p>
           Exciting team and their projects are on their way.<br />Stay tuned for
@@ -421,15 +384,23 @@
       </div>
     </div>
     <div class="social-row" aria-label="Social media links">
-      <a href="https://www.instagram.com/pesce.iste/" target="_blank" class="social-link">
-                <img src="instalogo.png" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com/company/iste-pesce/" target="_blank" class="social-link">
-                <img src="linkedinlogo.png" alt="LinkedIn">
-            </a>
-            <a href="mailto:iste@pesce.ac.in" class="social-link">
-                <img src="maillogo.png" alt="Gmail">
-            </a>
+      <a
+        href="https://www.instagram.com/pesce.iste/"
+        target="_blank"
+        class="social-link"
+      >
+        <img src="instalogo.png" alt="Instagram" />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/iste-pesce/"
+        target="_blank"
+        class="social-link"
+      >
+        <img src="linkedinlogo.png" alt="LinkedIn" />
+      </a>
+      <a href="mailto:iste@pesce.ac.in" class="social-link">
+        <img src="maillogo.png" alt="Gmail" />
+      </a>
       <!--<a
         href="https://github.com/Devops-Malnad"
         target="_blank"
@@ -447,6 +418,7 @@
       <p>&copy; 2025 ISTE PESCE. All rights reserved.</p>
     </footer>
     <!-- Vanta.js scripts for DOTS effect -->
+    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
     <script>
@@ -523,37 +495,37 @@
         });
       });
     </script>
-    
+
     <!-- Modal functionality -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('coming-soon-modal');
-        const closeBtn = document.getElementById('modal-close');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("coming-soon-modal");
+        const closeBtn = document.getElementById("modal-close");
+
         // Close modal when close button is clicked
-        closeBtn.addEventListener('click', function() {
-          modal.style.opacity = '0';
+        closeBtn.addEventListener("click", function () {
+          modal.style.opacity = "0";
           setTimeout(() => {
-            modal.style.display = 'none';
+            modal.style.display = "none";
           }, 300);
         });
-        
+
         // Close modal when clicking outside the modal content
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener("click", function (e) {
           if (e.target === modal) {
-            modal.style.opacity = '0';
+            modal.style.opacity = "0";
             setTimeout(() => {
-              modal.style.display = 'none';
+              modal.style.display = "none";
             }, 300);
           }
         });
-        
+
         // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && modal.style.display !== 'none') {
-            modal.style.opacity = '0';
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.style.display !== "none") {
+            modal.style.opacity = "0";
             setTimeout(() => {
-              modal.style.display = 'none';
+              modal.style.display = "none";
             }, 300);
           }
         });

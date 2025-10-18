@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="navbar.css" />
     <style>
       html,
       body {
@@ -309,37 +310,8 @@
     <div id="vanta-bg"></div>
 
     <header>
-      <nav class="navbar">
-        <a href="index.html" class="brand">
-          <img
-            src="Iste logo perfect background removed.png"
-            alt="ISTE Logo"
-            class="logo-img"
-          />
-          <span class="site-title">ISTE</span>
-        </a>
-
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="event.html">Events</a></li>
-          <li class="dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Student Chapters</a
-            >
-            <ul class="dropdown-menu" aria-label="submenu">
-              <li><a href="istewings.html">ISTE WINGS</a></li>
-              <li><a href="istearcs.html">ISTE ARCS</a></li>
-            </ul>
-          </li>
-          <li><a href="our_team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="aboutus.html">About</a></li>
-        </ul>
-      </nav>
+      <!-- Navigation -->
+      <div id="navbar-placeholder"></div>
     </header>
 
     <!-- Coming Soon Modal -->
@@ -369,15 +341,23 @@
 
     <div class="bottom-section">
       <div class="social-row">
-        <a href="https://www.instagram.com/pesce.iste/" target="_blank" class="social-link">
-                <img src="instalogo.png" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com/company/iste-pesce/" target="_blank" class="social-link">
-                <img src="linkedinlogo.png" alt="LinkedIn">
-            </a>
-            <a href="mailto:iste@pesce.ac.in" class="social-link">
-                <img src="maillogo.png" alt="Gmail">
-            </a>
+        <a
+          href="https://www.instagram.com/pesce.iste/"
+          target="_blank"
+          class="social-link"
+        >
+          <img src="instalogo.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/iste-pesce/"
+          target="_blank"
+          class="social-link"
+        >
+          <img src="linkedinlogo.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:iste@pesce.ac.in" class="social-link">
+          <img src="maillogo.png" alt="Gmail" />
+        </a>
       </div>
       <footer class="footer">
         <div class="footer-container">
@@ -389,6 +369,7 @@
     </div>
 
     <!-- Vanta.js globe effect script -->
+    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script>
