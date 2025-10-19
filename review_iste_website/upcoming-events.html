@@ -29,13 +29,7 @@
       body {
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
           Roboto, sans-serif;
-        background: linear-gradient(
-          135deg,
-          #0f172a 0%,
-          #1e293b 30%,
-          #334155 60%,
-          #475569 100%
-        );
+        background-color: #0a1828;
         color: #ffffff;
         line-height: 1.7;
         overflow-x: hidden;
@@ -51,13 +45,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(
-          135deg,
-          #0f172a 0%,
-          #1e293b 30%,
-          #334155 60%,
-          #475569 100%
-        );
+        background-color: #0a1828;
         overflow: hidden;
       }
 
@@ -77,8 +65,8 @@
       .particle:nth-child(odd) {
         background: radial-gradient(
           circle,
-          rgba(99, 102, 241, 0.6) 0%,
-          rgba(99, 102, 241, 0.1) 70%,
+          rgba(23, 133, 130, 0.6) 0%,
+          /* turquoise */ rgba(23, 133, 130, 0.1) 70%,
           transparent 100%
         );
         animation-duration: 12s;
@@ -87,8 +75,8 @@
       .particle:nth-child(even) {
         background: radial-gradient(
           circle,
-          rgba(139, 92, 246, 0.6) 0%,
-          rgba(139, 92, 246, 0.1) 70%,
+          rgba(191, 161, 129, 0.6) 0%,
+          /* gold */ rgba(191, 161, 129, 0.1) 70%,
           transparent 100%
         );
         animation-duration: 10s;
@@ -96,9 +84,9 @@
 
       .particle:nth-child(3n) {
         background: radial-gradient(
-          circle,
-          rgba(6, 182, 212, 0.5) 0%,
-          rgba(6, 182, 212, 0.1) 70%,
+          /* a mix for variety */ circle,
+          rgba(180, 150, 120, 0.5) 0%,
+          rgba(180, 150, 120, 0.1) 70%,
           transparent 100%
         );
         animation-duration: 15s;
@@ -181,8 +169,8 @@
 
       /* Navbar */
       .navbar {
-        background: rgba(15, 23, 42, 0.95);
-        backdrop-filter: blur(20px);
+        background: rgba(10, 24, 40, 0.85);
+        backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         position: fixed;
         top: 0;
@@ -239,8 +227,8 @@
       }
 
       .nav-links a:hover {
-        color: #6366f1;
-        background: rgba(99, 102, 241, 0.1);
+        color: #bfa181; /* gold */
+        background: rgba(191, 161, 129, 0.1);
       }
 
       .dropdown {
@@ -252,7 +240,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background: rgba(15, 23, 42, 0.95);
+        background: rgba(10, 24, 40, 0.9);
         backdrop-filter: blur(20px);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
@@ -278,8 +266,8 @@
       }
 
       .dropdown-menu a:hover {
-        background: rgba(99, 102, 241, 0.1);
-        color: #6366f1;
+        background: rgba(191, 161, 129, 0.1);
+        color: #bfa181; /* gold */
       }
 
       /* Main Content */
@@ -304,7 +292,11 @@
         font-size: 4rem;
         font-weight: 700;
         margin-bottom: 2rem;
-        background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+        background: linear-gradient(
+          135deg,
+          #178582,
+          #bfa181
+        ); /* turquoise to gold */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -313,10 +305,10 @@
 
       @keyframes titleGlow {
         0% {
-          filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.3));
+          filter: drop-shadow(0 0 20px rgba(23, 133, 130, 0.3));
         }
         100% {
-          filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.5));
+          filter: drop-shadow(0 0 30px rgba(191, 161, 129, 0.5));
         }
       }
 
@@ -345,10 +337,10 @@
       }
 
       .back-button:hover {
-        background: rgba(99, 102, 241, 0.2);
+        background: rgba(23, 133, 130, 0.2);
         color: #ffffff;
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        box-shadow: 0 10px 25px rgba(23, 133, 130, 0.3);
       }
 
       /* Animations */
@@ -437,7 +429,7 @@
           shape.style.top = Math.random() * 100 + "%";
           shape.style.width = Math.random() * 100 + 50 + "px";
           shape.style.height = shape.style.width;
-          shape.style.background = `linear-gradient(45deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1))`;
+          shape.style.background = `linear-gradient(45deg, rgba(23, 133, 130, 0.1), rgba(191, 161, 129, 0.1))`;
           shape.style.borderRadius = Math.random() > 0.5 ? "50%" : "0%";
           particleBg.appendChild(shape);
         }
@@ -450,7 +442,7 @@
           orb.style.top = Math.random() * 100 + "%";
           orb.style.width = Math.random() * 200 + 100 + "px";
           orb.style.height = orb.style.width;
-          orb.style.background = `radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent)`;
+          orb.style.background = `radial-gradient(circle, rgba(23, 133, 130, 0.3), transparent)`;
           orb.style.animationDelay = Math.random() * 8 + "s";
           particleBg.appendChild(orb);
         }

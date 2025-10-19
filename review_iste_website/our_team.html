@@ -28,13 +28,7 @@
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: linear-gradient(
-    135deg,
-    #0f172a 10%,
-    #1e293b 50%,
-    #334155 60%,
-    #475569 100%
-  );
+  background-color: #0A1828;
   color: #ffffff;
   line-height: 1.7;
   overflow-x: hidden;
@@ -44,11 +38,7 @@ body {
       .hero-section {
         padding: 120px 2rem 80px;
         text-align: center;
-        background: linear-gradient(
-          135deg,
-          rgba(99, 102, 241, 0.1) 0%,
-          rgba(139, 92, 246, 0.1) 100%
-        );
+        background: rgba(23, 133, 130, 0.1); /* turquoise tint */
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
 .hero-section {
@@ -59,11 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    rgba(99, 102, 241, 0.1) 0%,
-    rgba(139, 92, 246, 0.1) 100%
-  );
+  background: rgba(23, 133, 130, 0.1); /* turquoise tint */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .hero-section h1 {
@@ -71,8 +57,8 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
+  background: linear-gradient(135deg, #BFA181, #178582); /* gold to turquoise */
+  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
@@ -104,10 +90,10 @@ body {
 }
 .tab-btn.active,
 .tab-btn:hover {
-  background: linear-gradient(135deg, #e52e71, #ff8a00);
+  background: linear-gradient(135deg, #178582, #BFA181); /* turquoise to gold */
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(229, 46, 113, 0.3);
+  box-shadow: 0 10px 25px rgba(23, 133, 130, 0.3);
 }
 .main-content {
   padding: 4rem 2rem;
@@ -143,7 +129,7 @@ body {
 .team-member:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border-color: rgba(229, 46, 113, 0.3);
+  border-color: rgba(23, 133, 130, 0.4);
 }
 .member-image {
   width: 110px;
@@ -152,7 +138,7 @@ body {
   margin: 0 auto 1.5rem;
   position: relative;
   overflow: hidden;
-  border: 4px solid rgba(229, 46, 113, 0.2);
+  border: 4px solid rgba(23, 133, 130, 0.2); /* turquoise */
   transition: all 0.3s ease;
 }
 .member-image img {
@@ -161,7 +147,7 @@ body {
   object-fit: cover;
 }
 .team-member:hover .member-image {
-  border-color: #e52e71;
+  border-color: #178582; /* turquoise */
   transform: scale(1.05);
 }
 .member-name {
@@ -190,13 +176,13 @@ body {
   margin-bottom: 1rem;
 }
 .expertise-tag, .expertise-tag1, .expertise-tag2 {
-  background: rgba(6, 182, 212, 0.1);
-  color: #22d3ee;
+  background: rgba(191, 161, 129, 0.1); /* gold */
+  color: #BFA181;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(191, 161, 129, 0.2);
   transition: all 0.3s ease;
 }
 /* Classes for centering last row items */
@@ -213,9 +199,9 @@ body {
 }
 /* Core Member Styling */
 .core-member {
-  background: linear-gradient(135deg, #e52e71, #ff8a00);
-  border-color: #e52e71;
-  box-shadow: 0 10px 40px rgba(229, 46, 113, 0.4);
+  background: linear-gradient(135deg, #178582, #BFA181); /* turquoise to gold */
+  border-color: #178582;
+  box-shadow: 0 10px 40px rgba(23, 133, 130, 0.4);
   color: #fff;
 }
 .core-member .member-name,
@@ -232,10 +218,10 @@ body {
 .section-subtitle {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
-  color: #ff8a00;
+  color: #BFA181; /* gold */
   text-align: center;
   margin: 2rem auto 1.5rem auto;
-  border-bottom: 2px solid #ff8a00;
+  border-bottom: 2px solid #BFA181;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -252,8 +238,8 @@ body {
   }
   .member-contact .contact-link {
     font-size: 1.5rem;
-    color: #fff;
-    background: rgba(99, 102, 241, 0.08);
+    color: #fff;    
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -264,8 +250,8 @@ body {
     text-decoration: none;
   }
   .member-contact .contact-link:hover {
-    background: linear-gradient(135deg, #e52e71, #ff8a00);
-    color: pink;
+    background: #fff;
+    color: #0A1828;
     transform: translateY(-2px) scale(1.1);
   }
 /* Stats Section */
@@ -286,8 +272,8 @@ body {
 .stat-number {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  font-weight: 700;
-  color: #22d3ee;
+  font-weight: 700;  
+  color: #178582; /* turquoise */
   margin-bottom: 0.5rem;
 }
 .stat-label {
@@ -315,7 +301,7 @@ footer {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #e52e71, #ff8a00);
+  background: linear-gradient(135deg, #178582, #BFA181); /* turquoise to gold */
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -325,7 +311,7 @@ footer {
 }
 .social-link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(229, 46, 113, 0.3);
+  box-shadow: 0 10px 25px rgba(23, 133, 130, 0.3);
 }
 .social-link img {
   width: 35px;
