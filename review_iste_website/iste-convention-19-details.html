@@ -1,70 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>19th ISTE Convention - Details</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', system-ui; color:#e5e7eb; background:radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.15), transparent 60%),radial-gradient(900px 500px at 110% 10%, rgba(6,182,212,.12), transparent 60%),linear-gradient(135deg,#0f172a 0%,#1e1b4b 45%,#3b0764 100%); line-height:1.75; min-height:100vh; overflow-x:hidden }
-        .particles{position:fixed;inset:0;z-index:-1;overflow:hidden}
-        .particle{position:absolute;border-radius:50%;filter:blur(1px);opacity:.4;animation:float 14s ease-in-out infinite}
-        .particle.p1{width:6px;height:6px;background:#60a5fa;left:12%;top:18%}
-        .particle.p2{width:8px;height:8px;background:#a78bfa;left:30%;top:70%;animation-duration:16s}
-        .particle.p3{width:5px;height:5px;background:#22d3ee;left:75%;top:25%;animation-duration:18s}
-        .particle.p4{width:7px;height:7px;background:#818cf8;left:60%;top:80%;animation-duration:20s}
-        @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}
-        .wrap { max-width: 1100px; margin: 0 auto; padding: 84px 20px 60px; }
-        .back { display: inline-flex; align-items: center; gap: 10px; color: #c7bba4; text-decoration: none; margin-bottom: 18px; font-weight:500 }
-        .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 26px; backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(2,6,23,.35); }
-        h1 { font-family: 'Montserrat', sans-serif; font-weight:800; font-size: 2.8rem; color: #fff; margin-bottom: 8px; }
-        .sub { color: #a5b4fc; margin-bottom: 20px; font-family:'Oswald',sans-serif; letter-spacing:.6px }
-        h2 { font-family: 'Montserrat', sans-serif; font-weight:700; font-size: 1.7rem; color: #e0e7ff; margin: 24px 0 10px; position:relative; display:inline-block }
-        h2::after{content:""; position:absolute; left:0; bottom:-6px; width:64px; height:3px; background: linear-gradient(90deg,#60a5fa,#a78bfa,#22d3ee); border-radius:2px}
-        ul { margin-left: 18px; }
-        li { margin: 6px 0; }
-        .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-        @media (min-width: 880px){ .grid { grid-template-columns: 1fr 1fr; } }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", system-ui;
+        color: #e5e7eb;
+        background-color: #0a1828;
+        line-height: 1.75;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .particles {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        overflow: hidden;
+      }
+      .particle {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(1px);
+        opacity: 0.4;
+        animation: float 14s ease-in-out infinite;
+      }
+      .particle.p1 {
+        width: 6px;
+        height: 6px;
+        background: #178582;
+        left: 12%;
+        top: 18%;
+      } /* turquoise */
+      .particle.p2 {
+        width: 8px;
+        height: 8px;
+        background: #bfa181;
+        left: 30%;
+        top: 70%;
+        animation-duration: 16s;
+      } /* gold */
+      .particle.p3 {
+        width: 5px;
+        height: 5px;
+        background: #178582;
+        left: 75%;
+        top: 25%;
+        animation-duration: 18s;
+      } /* turquoise */
+      .particle.p4 {
+        width: 7px;
+        height: 7px;
+        background: #bfa181;
+        left: 60%;
+        top: 80%;
+        animation-duration: 20s;
+      } /* gold */
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-18px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 84px 20px 60px;
+      }
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #bfa181;
+        text-decoration: none;
+        margin-bottom: 18px;
+        font-weight: 500;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+        padding: 26px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.35);
+      }
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 2.8rem;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+      .sub {
+        color: #178582;
+        margin-bottom: 20px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 0.6px;
+      }
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.7rem;
+        color: #e0e7ff;
+        margin: 24px 0 10px;
+        position: relative;
+        display: inline-block;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 64px;
+        height: 3px;
+        background: linear-gradient(90deg, #178582, #bfa181);
+        border-radius: 2px;
+      }
+      ul {
+        margin-left: 18px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      @media (min-width: 880px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
     </style>
-    </head>
-<body>
-    <div class="particles"><span class="particle p1"></span><span class="particle p2"></span><span class="particle p3"></span><span class="particle p4"></span></div>
-    <div class="wrap">
-        <a class="back" href="event.html"><i class="fas fa-arrow-left"></i> Back to Events</a>
-        <header class="card">
-            <h1>19th ISTE Convention</h1>
-            <p class="sub">PESCE Campus • Completed</p>
-        </header>
-        <section class="card">
-            <h2>Overview</h2>
-            <p>The 19th ISTE Karnataka State-Level Student Convention, held on June 7, 2024, at PESCE Mandya, gathered 600+ students, educators, and leaders from over 200 institutions—a landmark gathering for innovation, entrepreneurship, and technical excellence.</p>
-            <p>Themed “Empowering Young Minds for Innovative Startup Culture,” the event featured a grand opening with keynotes from industry and ISTE national leaders, and a vibrant cultural program.</p>
-            <p>25+ technical and non-technical events were hosted: hackathons, coding battles, robotics, quizzes, poster-making, debates, and workshops, challenging participants in every domain and showcasing creative thinking.</p>
-            <p>The organizing committee, comprising faculty and a large student core, managed months of meticulous planning, seamless registration, logistics, and guest coordination for this large-scale convention.</p>
-            <p>The event promoted cross-campus networking, career mentorship, new technology exploration, and peer-to-peer collaboration. Attendees gained new technical skills, blockchain-certified credentials, and lasting bonds.</p>
-            <p>Standout moments included the talent-spotlight award ceremony, Best Student Chapter honors, and a closing that left participants motivated for future technological achievement.</p>
-        </section>
-        <section class="grid">
-            <div class="card">
-                <h2>Agenda</h2>
-                <ul>
-                    <li>Inaugural keynote & chief guest addresses</li>
-                    <li>Group/parallel technical events and workshops</li>
-                    <li>Cultural showcase & networking sessions</li>
-                    <li>Awards, certificates, and closing remarks</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h2>Organizers</h2>
-                <p>Supported by ISTE state/national committee, PESCE management, and student volunteers</p>
-                <h2>Impact</h2>
-                <p>New skills, ideas, and friendships across student chapters and institutions</p>
-            </div>
-        </section>
+  </head>
+  <body>
+    <div class="particles">
+      <span class="particle p1"></span><span class="particle p2"></span
+      ><span class="particle p3"></span><span class="particle p4"></span>
     </div>
-</body>
+    <div class="wrap">
+      <a class="back" href="event.html"
+        ><i class="fas fa-arrow-left"></i> Back to Events</a
+      >
+      <header class="card">
+        <h1>19th ISTE Convention</h1>
+        <p class="sub">PESCE Campus • Completed</p>
+      </header>
+      <section class="card">
+        <h2>Overview</h2>
+        <p>
+          The 19th ISTE Karnataka State-Level Student Convention, held on June
+          7, 2024, at PESCE Mandya, gathered 600+ students, educators, and
+          leaders from over 200 institutions—a landmark gathering for
+          innovation, entrepreneurship, and technical excellence.
+        </p>
+        <p>
+          Themed “Empowering Young Minds for Innovative Startup Culture,” the
+          event featured a grand opening with keynotes from industry and ISTE
+          national leaders, and a vibrant cultural program.
+        </p>
+        <p>
+          25+ technical and non-technical events were hosted: hackathons, coding
+          battles, robotics, quizzes, poster-making, debates, and workshops,
+          challenging participants in every domain and showcasing creative
+          thinking.
+        </p>
+        <p>
+          The organizing committee, comprising faculty and a large student core,
+          managed months of meticulous planning, seamless registration,
+          logistics, and guest coordination for this large-scale convention.
+        </p>
+        <p>
+          The event promoted cross-campus networking, career mentorship, new
+          technology exploration, and peer-to-peer collaboration. Attendees
+          gained new technical skills, blockchain-certified credentials, and
+          lasting bonds.
+        </p>
+        <p>
+          Standout moments included the talent-spotlight award ceremony, Best
+          Student Chapter honors, and a closing that left participants motivated
+          for future technological achievement.
+        </p>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <h2>Agenda</h2>
+          <ul>
+            <li>Inaugural keynote & chief guest addresses</li>
+            <li>Group/parallel technical events and workshops</li>
+            <li>Cultural showcase & networking sessions</li>
+            <li>Awards, certificates, and closing remarks</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Organizers</h2>
+          <p>
+            Supported by ISTE state/national committee, PESCE management, and
+            student volunteers
+          </p>
+          <h2>Impact</h2>
+          <p>
+            New skills, ideas, and friendships across student chapters and
+            institutions
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
-
-
